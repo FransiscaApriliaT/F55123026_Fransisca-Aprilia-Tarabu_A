@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, main, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        header {
+            background-image: url('65-657085_kumpulan-gambar-dekorasi-pohon-natal-keren-untuk-background.jpg');
+            background-size: cover;
+            color: #2c7544;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 45px;
+            border: 5px solid #03742e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Georgia', serif; 
+            font-size: 2rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(231, 91, 26, 0.7), 0px 0px 25px rgba(255, 0, 0, 0.4);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #cc901f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffffff;
+            background-color: #4CAF50;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        main section {
+            display: none;
+            margin-bottom: 20px;
+        }
+        main section:target {
+            display: block;
+        }
+        #home img {
+            display: block;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 3px solid #ccc;
+            padding: 10px;
+            width: 450px;
+        }
+        .portfolio img {
+            width: 300px;
+            height: 300px;
+            margin: 15px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio img:hover {
+        transform: scale(1.1); /* Membesarkan gambar saat hover */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Semantic HTML</h1>        
+            <ul>        
+                <li><a href="#home">Home</a></li>      
+                <li><a href="#tentang-saya">Tentang Saya</a></li> 
+                <li><a href="#portofolio">Portofolio</a></li>     
+            </ul>        
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <img src="dinosaurio-lindo-doodle-dia-navidad-ilustracion-acuarela_102385-1013.avif" alt="Logo">
+        </section>
+
+        <section id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Nama Saya Fransisca Aprilia Tarabu. NIM F55123026. Saya berkuliah di Universitas Tadulako, fakultas teknik, jurusan teknik informatika, program studi S1-Teknik Informatika.</p>
+        </section>
+
+        <section id="portofolio" class="portfolio">
+            <h2>Portofolio</h2>
+            <p>Beberapa proyek dan karya yang pernah saya buat:</p>
+            <div>
+                <img src="Screenshot 2024-11-07 094838.png" alt="Proyek 1">
+                <img src="Screenshot 2024-10-07 134308.png" alt="Proyek 2">
+                <img src="Screenshot 2024-10-07 134435.png" alt="Proyek 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hubungi saya di: 
+            <a href="mailto:fransiscaapriliatarabu@gmail.com" style="color: #4CAF50;">fransiscaapriliatarabu@gmail.com</a>
+        </p>
+        <p>Ikuti saya di:
+            <a href="https://www.instagram.com/frnsscaprilia_" target="_blank" style="color: #4CAF50;">Instagram</a> |
+            <a href="https://wa.me/6285396259985" target="_blank" style="color: #4CAF50;">WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>
